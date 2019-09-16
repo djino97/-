@@ -16,7 +16,7 @@ namespace WindowsFormsApp2
         public static UInt32[,] pixel, tempPixel;
         public int pb2X, pb2Y; bool change = false;
 
-        private void откратьНовыйToolStripMenuItem_Click(object sender, EventArgs e)
+        private void OpenNewToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Open();
         }
@@ -48,7 +48,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void сохранитьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SaveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (RedImage == null || pictureBox2.Image == null)
                 MessageBox.Show("Нет отредактированного изображения!");
@@ -71,7 +71,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void гистограммаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HistogramToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
             if (menuItem.CheckState == CheckState.Checked)
@@ -90,7 +90,7 @@ namespace WindowsFormsApp2
             }
         }
 
-        private void срезФункцииЯркостиToolStripMenuItem_Click(object sender, EventArgs e)
+        private void SliceFunctionBrightnessToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
             if (menuItem.CheckState == CheckState.Checked)
@@ -106,7 +106,7 @@ namespace WindowsFormsApp2
             }
         }        
 
-        private void адаптивноеToolStripMenuItem_Click(object sender, EventArgs e)
+        private void AdaptiveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MyImage == null)
                 MessageBox.Show("Изображение не выбрано!");
@@ -131,17 +131,17 @@ namespace WindowsFormsApp2
             pictureBox2.Image = (Image)RedImage;
         }
 
-        private void справкаToolStripMenuItem_Click(object sender, EventArgs e)
+        private void HelpToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("", "Справка", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
 
-        private void закрытьToolStripMenuItem_Click(object sender, EventArgs e)
+        private void CloseToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void сравнениеПараметровToolStripMenuItem_Click(object sender, EventArgs e)
+        private void ComparisonSttingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
             if (menuItem.CheckState == CheckState.Checked)
@@ -150,7 +150,7 @@ namespace WindowsFormsApp2
                 menuItem.CheckState = CheckState.Checked;
         }        
 
-        private void окноНастроекToolStripMenuItem_Click(object sender, EventArgs e)
+        private void WindowsSettingsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form f = new Form2();
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
