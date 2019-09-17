@@ -225,7 +225,6 @@ namespace WindowsFormsApp2
         private double TheCalculationNewLuminance(double Zg, double Dz, double Z)
         {
             double Kg;
-            //int u = 100; // средняя яркость всего изображения
 
             Kg = (experimentalConstant) / Math.Sqrt(Dz); // Вычисление коэфициента усиления резкости
 
