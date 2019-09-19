@@ -154,18 +154,12 @@ namespace WindowsFormsApp2
         {
             Form f = new Form2();
             ToolStripMenuItem menuItem = sender as ToolStripMenuItem;
-            if (menuItem.CheckState == CheckState.Checked)
-            {
-                //menuItem.CheckState = CheckState.Unchecked;
-                //groupBox4.Visible = false;
-                
-            }
-            else if (menuItem.CheckState == CheckState.Unchecked)
+            
+            if (menuItem.CheckState == CheckState.Unchecked)
             {
                 menuItem.CheckState = CheckState.Checked;
                 f.Owner = this;
                 f.Show();
-                //groupBox4.Visible = true;
             }
         }
 
