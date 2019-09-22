@@ -274,6 +274,4 @@ namespace WindowsFormsApp2
             return Color;
         }
     }
-
-
 }
